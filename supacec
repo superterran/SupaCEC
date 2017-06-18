@@ -1,0 +1,22 @@
+#!/bin/bash
+
+POLL="ls -l /dev/input/"
+
+CUR=$($POLL)
+LST=$($POLL)
+touch .lock
+
+finish()
+{
+    exit
+}
+
+trap finish SIGINT
+
+while :; do
+    if (( ${#CUR} > ${#LST} )); then
+        $(echo "as" | cec-client -s)
+    fi
+    LST=$CUR
+    CUR=$($POLL)
+done
