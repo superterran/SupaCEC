@@ -19,4 +19,5 @@ while :; do
     fi
     LST=$CUR
     CUR=$($POLL)
+    sleep 1
 done
