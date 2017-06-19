@@ -15,7 +15,8 @@ trap finish SIGINT
 
 while :; do
     if (( ${#CUR} > ${#LST} )); then
-        $(echo "as" | cec-client -s)
+	# pause and steal active source
+	$(echo "tx 14:44:46" | echo "as" | cec-client -s -d 1) 
     fi
     LST=$CUR
     CUR=$($POLL)
