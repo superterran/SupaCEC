@@ -4,7 +4,6 @@ POLL="ls -l /dev/input/"
 
 CUR=$($POLL)
 LST=$($POLL)
-touch .lock
 
 finish()
 {
