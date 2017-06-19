@@ -12,3 +12,12 @@ The script is very simple, and should be considered a stub for a more robust sol
 ## This sucks, you should have done it this way...
 
 PR's are accepted!
+
+## Well, I don't see you in experimental so how do I install it?
+
+You can quasi-add my package like this...
+
+```sh
+$ curl https://raw.githubusercontent.com/superterran/SupaCEC/master/RetroPie-Setup/scriptmodules/supplementary/supacec.sh > /home/pi/RetroPie-Setup/scriptmodules/supplementary/supacec.sh
+```
+Now go into the RetroPie Setup, and you'll see this package under Experimental
