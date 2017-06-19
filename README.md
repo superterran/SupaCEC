@@ -17,7 +17,7 @@ PR's are accepted!
 
 You can quasi-add my package like this...
 
-```/bin/sh
+```sh
 $ curl https://raw.githubusercontent.com/superterran/SupaCEC/master/RetroPie-Setup/scriptmodules/supplementary/supacec.sh > /home/pi/RetroPie-Setup/scriptmodules/supplementary/supacec.sh
 ```
 Now go into the RetroPie Setup, and you'll see this package under Experimental
