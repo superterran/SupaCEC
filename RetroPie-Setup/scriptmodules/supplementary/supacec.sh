@@ -24,10 +24,14 @@ function sources_supacec() {
 
 }
 
+function remove_supacec() {
+    sudo update-rc.d -f supacec remove
+    sudo /etc/init.d/supacec stop
+    sudo rm -f /usr/bin/supacec 
+    sudo rm -f /etc/init.d/supacec
+}
+
 function install_supacec() {
-    echo $md_build
-    cd "$md_build"
-    echo "dropping some files..." 
     sudo cp "$md_build/supacec.d" /etc/init.d/supacec
     sudo cp "$md_build/supacec" /usr/bin/supacec
     sudo chmod +x /usr/bin/supacec
