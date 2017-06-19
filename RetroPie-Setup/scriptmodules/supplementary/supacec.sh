@@ -20,7 +20,7 @@ function depends_supacec() {
 }
 
 function sources_supacec() {
-    gitPullOrClone "$md_build" "https://github.com/superterran/SupaCEC.git" "master"
+    gitPullOrClone "$md_build" "https://github.com/superterran/SupaCEC.git" 
 
 }
 
