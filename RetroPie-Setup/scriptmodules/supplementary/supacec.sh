@@ -25,12 +25,11 @@ function sources_supacec() {
 }
 
 function remove_supacec() {
-    #removes the old shit and the new shit
-    sudo update-rc.d -f supacec remove
-    sudo /etc/init.d/supacec stop
-    
+
     #lets compensate for our old setup
     if [ -f /etc/init.d/supacec ]; then
+        sudo update-rc.d -f supacec remove
+        sudo /etc/init.d/supacec stop
         sudo rm -f /etc/init.d/supacec
     fi
 
@@ -38,6 +37,7 @@ function remove_supacec() {
         sudo rm -f /usr/bin/supacec
     fi
     
+    # lets also remove our new setup
     if [ -f /usr/bin/supacec ]; then
         sudo rm -f /etc/udev/rules.d/10-cec.rules
     fi
