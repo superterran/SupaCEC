@@ -3,11 +3,14 @@ Because my RetroPie doesn't switch inputs when I turn on my controller
 
 ## What is it?
 
-This is a simple bash script, along with an init.d control script and an installer 
-in the form of a RetroPie-Setup script, that will allows for the system to automatically
-switch inputs when it detects a input device added to the system. When detected,
-it will trigger the active source to pause and will steal the active source for itself.
-The script is very simple, and should be considered a stub for a more robust solution.
+Read more in the (Retropie Forum Thread)[https://retropie.org.uk/forum/topic/11084/supacec-a-utility-to-switch-tv-inputs-when-a-controller-is-connected]
+
+
+This has now took the form of some udev rules that trigger CEC commands whenever another joystick is added. 
+
+#Special Thanks To...
+
+Thanks to  @Sano and @psyke83 on the Retropie forum for 1upping my solution! 
 
 ## This sucks, you should have done it this way...
 
