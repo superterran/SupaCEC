@@ -3,7 +3,7 @@ Because my RetroPie doesn't switch inputs when I turn on my controller
 
 ## What is it?
 
-Read more in the (Retropie Forum Thread)[https://retropie.org.uk/forum/topic/11084/supacec-a-utility-to-switch-tv-inputs-when-a-controller-is-connected]
+Read more in the [Retropie Forum Threa](https://retropie.org.uk/forum/topic/11084/supacec-a-utility-to-switch-tv-inputs-when-a-controller-is-connected)
 
 
 This has now took the form of some udev rules that trigger CEC commands whenever another joystick is added. 
