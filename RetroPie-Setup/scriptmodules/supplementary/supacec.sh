@@ -28,29 +28,29 @@ function remove_supacec() {
 
     #lets compensate for our old setup
     if [ -f /etc/init.d/supacec ]; then
-        sudo update-rc.d -f supacec remove
-        sudo /etc/init.d/supacec stop
-        sudo rm -f /etc/init.d/supacec
+        update-rc.d -f supacec remove
+        /etc/init.d/supacec stop
+        rm -f /etc/init.d/supacec
     fi
 
     if [ -f /usr/bin/supacec ]; then
-        sudo rm -f /usr/bin/supacec
+        rm -f /usr/bin/supacec
     fi
     
     # lets also remove our new setup
     if [ -f /usr/bin/supacec ]; then
-        sudo rm -f /etc/udev/rules.d/10-cec.rules
+        rm -f /etc/udev/rules.d/10-cec.rules
     fi
     
-    sudo udevadm control --reload-rules   
+    udevadm control --reload-rules   
 
 }
 
 function install_supacec() {
     
     remove_supacec   
-    sudo cp "$md_build/10-cec.rules" /etc/udev/rules.d/10-cec.rules    
-    sudo udevadm control --reload-rules
+    cp "$md_build/10-cec.rules" /etc/udev/rules.d/10-cec.rules    
+    udevadm control --reload-rules
 
 
 }
