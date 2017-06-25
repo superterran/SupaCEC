@@ -1,0 +1,2 @@
+ACTION=="add", KERNEL=="js*", SUBSYSTEM=="input", RUN+="/bin/bash -c '/bin/echo tx 14:44:46 | /usr/bin/cec-client -s -d 1 && /bin/echo as | /usr/bin/cec-client -s -d 1'"
+ACTION=="add", KERNEL=="event*", SUBSYSTEM=="input", RUN+="/bin/bash -c '/bin/echo tx 14:44:46 | /usr/bin/cec-client -s -d 1 && /bin/echo as | /usr/bin/cec-client -s -d 1'"
