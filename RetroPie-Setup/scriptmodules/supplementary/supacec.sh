@@ -48,7 +48,7 @@ function remove_supacec() {
 
 function install_supacec() {
     
-    remove_supacec()    
+    remove_supacec   
     sudo cp "$md_build/10-cec.rules" /etc/udev/rules.d/10-cec.rules    
     sudo udevadm control --reload-rules
 
