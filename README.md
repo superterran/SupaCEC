@@ -8,7 +8,7 @@ Read more in the [Retropie Forum Thread](https://retropie.org.uk/forum/topic/110
 
 This has now took the form of some udev rules that trigger CEC commands whenever another joystick is added. 
 
-##Special Thanks To...
+## Special Thanks To...
 
 Thanks to  @Sano and @psyke83 on the Retropie forum for 1upping my solution! 
 
